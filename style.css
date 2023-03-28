@@ -1,0 +1,103 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+}
+.center{
+	padding-left: calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+}
+body{
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 217px;
+    max-width: 788px;
+}
+.main-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 32px;
+    min-width: 481px;
+}
+.main-btn{
+    width: 234.06px;
+    height: 48.6px;
+    left: 120px;
+    background: #9C0332;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 44px;
+    margin-bottom: 493px;
+    border: none;
+    transition: 1s; /* Время эффекта */
+    display: block;
+}
+.main-btn:hover{
+    transform: scale(1.1); 
+}
+.section-2{
+    margin-top: 128px;
+    margin-bottom: 128px;
+    /* margin-left: 120px; */
+    display: flex;
+    gap: 32px;
+}
+.game{
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-end;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-bottom: 32px;
+}
+.game-1{
+    background-image: url('img/game1.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.game-2{
+    background-image: url('img/game2.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+.game-3{
+    background-image: url('img/game3.jpg');
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+strong{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-style: bold;
+}
