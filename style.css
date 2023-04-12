@@ -113,6 +113,8 @@ strong{
     .main-title{
         font-size: 32px;
         line-height: 39px;
+        padding-top: 217px;
+
         max-width: 788px;
     }
     .main-text{
