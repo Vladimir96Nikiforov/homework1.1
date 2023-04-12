@@ -2,11 +2,11 @@ let a = 10;
 a = 20;
 alert(a);
 
-let iphone = 2007;
-alert(iphone);
+let iphoneData = 2007;
+alert(iphoneData);
 
-let nameJs = 'Брендан Эйх';
-alert(nameJs);
+let nameMaster = 'Брендан Эйх';
+alert(nameMaster);
 
 let two = 2;
 let ten = 10;
@@ -30,8 +30,8 @@ num--;
 alert(num);
 
 
-let age = prompt("Сколько вам лет?");
-alert(age);
+const info = prompt("Сколько вам лет?");
+alert(info);
 let user = {     // объект
     name: "John",  // под ключом "name" хранится значение "John"
     age: 30,        // под ключом "age" хранится значение 30
@@ -45,4 +45,7 @@ alert(user.info)
 console.log(user);
 
 let userName = prompt("Ваше имя?")
-alert(["Привет, ", userName])
+alert("Привет, " + userName);
+
+
+
