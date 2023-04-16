@@ -62,8 +62,8 @@
     transform: scale(1.1); 
 }
 .section-2{
-    margin-top: 128px;
-    margin-bottom: 128px;
+    padding-top: 128px;
+    padding-bottom: 128px;
     /* margin-left: 120px; */
     display: flex;
     gap: 32px;
@@ -104,6 +104,67 @@ strong{
     padding-right: 5px;
     font-style: bold;
 }
+.section-3{
+    display: flex;
+    gap: 32px;
+    background-color: #000915;
+    padding-top: 282px;
+    padding-bottom: 233px;
+}
+.section-3-firstPart{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.section-3-secondPart{
+    padding-left: 135px;
+}
+.season{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+
+}
+.play-season{
+    max-width: 584px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.play-btn{
+    width: 234.06px;
+    height: 48.6px;
+    /* left: 120px; */
+    background: #9C0332;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    transition: 1s; /* Время эффекта */
+    display: block;
+}
+.play-btn:hover{
+    transform: scale(1.1); 
+}
+
+
+
+
 
 @media (max-width: 767px){
     .center{
@@ -143,5 +204,41 @@ strong{
         width: 343px;
         height: 300px;
         padding: 0px;
+    }
+
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000915;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 32px;
+    }
+    .section-3-firstPart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .section-3-secondPart{
+        padding-left: 16px;
+    }
+    .season{
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;  
+        display: block; 
+    }
+    .play-season{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px; 
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .jostic-img{
+        width: 344px;
     }
 }

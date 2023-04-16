@@ -30,7 +30,7 @@ for (let user in obj) {
 
   let data = 3;
   do {
-    data = data + 7
+    data = data += 7
     console.log(data);
     alert('Сегодня пятница ' + data + ' число, отправьте отчет') 
-  } while (data <= 26);
+  } while (data <= 31);
