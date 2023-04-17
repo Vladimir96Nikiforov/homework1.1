@@ -2,7 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .center{
 	padding-left: calc(50% - 600px);
@@ -16,7 +16,7 @@
     height: 1024px;
 }
 .main-title{
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
@@ -28,7 +28,7 @@
     max-width: 788px;
 }
 .main-text{
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -45,7 +45,7 @@
     left: 120px;
     background: #9C0332;
     border-radius: 30px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -73,7 +73,7 @@
     width: 379px;
     height: 300px;
     border-radius: 16px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -83,6 +83,9 @@
     color: #FFFFFF;
     padding-left: 32px;
     padding-bottom: 32px;
+}
+.game:hover{
+    transform: scale(1.01); 
 }
 .game-1{
     background-image: url('img/game1.jpg');
@@ -120,7 +123,7 @@ strong{
     padding-left: 135px;
 }
 .season{
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -132,7 +135,7 @@ strong{
 }
 .play-season{
     max-width: 584px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -147,7 +150,7 @@ strong{
     /* left: 120px; */
     background: #9C0332;
     border-radius: 30px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -172,6 +175,7 @@ strong{
         padding-right: 16px;
     }
     .main-title{
+        text-align: center;
         font-size: 32px;
         line-height: 39px;
         max-width: 788px;
@@ -201,7 +205,8 @@ strong{
         flex-direction: column;
     }
     .game{
-        width: 343px;
+        width: 100%;
+        /* width: 343px; */
         height: 300px;
         padding: 0px;
     }
