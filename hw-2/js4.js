@@ -37,10 +37,10 @@ upTwo()
 // Задание 4
 const age = function (){
     let n = prompt ('Введите ваш возраст'); 
-    if (n <= 0){
+    if (n < 0){
         alert('Вы ввели неправильное значение')
     }
-    else if (n <= 12 && n > 0){
+    else if (n <= 12 && n >= 0){
         alert('Привет друг')
     }
     else {
@@ -101,10 +101,10 @@ function myFunctionMult(){
     let res = "";
     res = Number.isNaN(threeMult)
     if (res === false){
-        return('n в кубе равняется'(Math.pow(threeMult, 3)))
+        return `n в кубе равняется ${Math.pow(threeMult, 3)}`
     }
     else {
-        return('ошибка');
+        return `ошибка`;
     }
 }
 myFunctionMult()
