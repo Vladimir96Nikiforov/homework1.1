@@ -97,6 +97,6 @@ getLengthWords.forEach(function(elem) {
 
 let arrNum = [1, 3, 5, 12];
     arrNum.forEach(function(item, arrNum) {
-        arrNum = item * - 1 ;
+        arrNum === item * - 1 ;
         console.log(arrNum);
       });
