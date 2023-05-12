@@ -1,44 +1,79 @@
+
+// const hhh = [5, 100, 99, 4, 23].sort();
+// console.log(hhh);
+
+// const array1 = [1, 2, 7, 4];
+
+// let b = [1,2,3,4,5].map(item => Math.pow(item, 2));
+
+// // arr1 = array1.map(el => el **2);
+
+// // console.log(arr);
+// // 0 + 1 + 2 + 3 + 4
+// const initialValue = 0;
+// const sumWithInitial = b.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   initialValue
+// );
+
+// console.log(sumWithInitial);
+// // Expected output: 10
+
 //Задание 1
-const people = [
+const people1 = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
 
- people.sort(function (a, b) {
+ people1.sort(function (a, b) {
     return a.age - b.age;
   });
-  console.log(people);
+  console.log(people1);
 
 
 //Задание 2?
 
-function isPositive(callback) {
-
+function isPositive(arr) {
+const arrFinal = [];
+arr.map(el => {
+  if (el > 0) {
+    arrFinal.push (el);
+  }
+})
+return arrFinal;
 }
-function isMale() {
-    // (people1 => people1.gender = 'male');
+
+
+function isMale(arrMail) {
+  const arrFinalmale = [];
+  arrMail.map(elem => {
+    if (elem.gender == 'male') {
+      arrFinalmale.push (elem);
+    }
+  })
+  return arrFinalmale ;
+  }
+
+
+function filter(myArr, myFunction) {
+return myFunction(myArr);
 }
-function filter() {
+ console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
-}
-const num = [3, -4, 1, 9];
-const only = num.filter((number) => number >= 0);
-
-console.log(only, isPositive); // Должен выводить [3, 1, 9]
-// filter([3, -4, 1, 9])
-
-const peopleM = [
-   {name: 'Глеб', gender: 'male'},
-   {name: 'Анна', gender: 'female'},
-   {name: 'Олег', gender: 'male'},
-   {name: 'Оксана', gender: 'female'}
+const people = [
+  {name: 'Глеб', gender: 'male'},
+  {name: 'Анна', gender: 'female'},
+  {name: 'Олег', gender: 'male'},
+  {name: 'Оксана', gender: 'female'}
 ];
-const Male = peopleM.filter(function(genderAll){return genderAll.gender =='male'})
 
-console.log(Male); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
-// filter(peopleM, isMale)
+console.log(filter(people, isMale)); // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+
+
+
 
 //Задание 3
 
@@ -50,80 +85,34 @@ setTimeout(() => { clearInterval(timerId); console.log('30 секунд прош
 //Задание 4
 
 
-function delayForSecond(callback) {
-  // setTimeout(callback, 1000);
-  // callback();
+function delayForSecond0(callback) {
+
 
 
   setTimeout(() => {
+callback()
 }, 1000)
+
 }
 
-delayForSecond(function () {
+delayForSecond0(function () {
   console.log('Привет, Глаеб!');
 })
 
-
-
-
-// function delayForSecond(callback) {
-// setTimeout(()=>
-// {
-//   console.log('fdf');
-// }, 1000)
-//     // setTimeout(() => delayForSecond, 1000);
-//   callback();
-// }
-
-// // delayForSecond(function () {
-// //   console.log('Привет, Глеб!');
-// // })
-
-
-
 //Задание 5+-
 
-// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
-// а затем вызывает переданный колбэк
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
-				if(cb) { 	cb(); }
+				cb('Глеб');
 
     }, 1000)
 }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
 function sayHi (name) {
     console.log(`Привет, ${name}!`);
 }
-
-// Код выше менять нельзя
-
-// Нужно изменить код ниже:
-cb();
-delayForSecond(sayHi('Глеб'))
+delayForSecond(sayHi)
 
 
 
-
-
-// function calling() {
-
-//   console.log('Звоню!')
-
-// };
-
-// function beeps(callback) {
-//   setTimeout(() => {
-//       console.log('Идут гудки...')
-//     callback();
-//   }, 1000);
-  
-// }
-// function talk() {
-//   console.log('Разговор')
-
-// }
-// calling();
-// beeps(talk);
