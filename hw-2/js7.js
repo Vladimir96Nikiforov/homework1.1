@@ -101,18 +101,42 @@ delayForSecond0(function () {
 
 //Задание 5+-
 
-function delayForSecond(cb) {
+function delayForSecond0(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
-				cb('Глеб');
+        if (cb) {
+            cb();
+        }
 
     }, 1000)
 }
 
-function sayHi (name) {
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi(name) {
     console.log(`Привет, ${name}!`);
 }
-delayForSecond(sayHi)
 
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond0(function() {
+    sayHi('Глеб')
+})
+
+
+//Задание 5, вариант не по условию (на всякий случай)
+
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+// 				cb('Глеб');
+
+//     }, 1000)
+// }
+
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
+// delayForSecond(sayHi)
 
 
